@@ -29,6 +29,11 @@ const StyledNavItem = styled.p`
   word-spacing: 3px;
   display: flex;
   padding: 0 8px;
+  transition: stroke 0.3s ease;
+
+  &:hover {
+    stroke: #ffffff; /* Change stroke color to white on hover */
+  }
 `;
 
 const Navbar = () => {

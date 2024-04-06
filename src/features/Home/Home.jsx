@@ -2,13 +2,6 @@ import styled from "styled-components";
 import ArrowDownIcon from "../../assets/DownArray";
 import { NavLink } from "react-router-dom";
 
-// const StyledLogo = styled.div`
-//   padding: 0 100px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// `;
-
 const Homepage = styled.div`
   height: 100vh;
 `;
@@ -28,12 +21,12 @@ const H2 = styled.h2`
   color: #152c54;
 `;
 
-const StyledArrowDownIcon = styled.div`
+const StyledArrowDownIcon = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   background-color: #50c4ed;
   border-radius: 200px;
   cursor: pointer;
@@ -128,16 +121,16 @@ const Home = () => {
             </g>
           </svg>
         </div>
-        <div className="flex ">
+        <div className="flex items-center justify-center">
           <H2>Making Lives Cooler!</H2>
         </div>
       </HomeGrid>
 
       <div className="flex items-center justify-center">
         <StyledArrowDownIcon>
-          <NavLink to="https://www.coolvision.co.il">
-            <ArrowDownIcon />
-          </NavLink>
+          <div>
+            <ArrowDownIcon className="hover:stroke-bg-white" />
+          </div>
         </StyledArrowDownIcon>
       </div>
     </Homepage>

@@ -5,7 +5,14 @@ const ArrowDownIcon = () => {
     height: 50px;
     width: 50px;
     font: 10px;
+    transition: stroke 0.3s ease; /* Add transition for smooth hover effect */
+
+    /* Define hover effect */
+    &:hover {
+      stroke: #ffffff;
+    }
   `;
+
   return (
     <BtnIcon
       xmlns="http://www.w3.org/2000/svg"
