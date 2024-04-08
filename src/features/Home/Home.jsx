@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import ArrowDownIcon from "../../assets/DownArray";
 import { NavLink } from "react-router-dom";
+import PeopleTalking from "../../assets/PeopleTalking";
+import LoveIcon from "../../assets/LoveIcon";
+import ExcellenceIcon from "../../assets/ExcellenceIcon";
+import EnjoymentIcon from "../../assets/EnjoymentIcon";
 
 const Homepage = styled.div`
   height: 100vh;
@@ -126,13 +130,119 @@ const Home = () => {
         </div>
       </HomeGrid>
 
-      <div className="flex items-center justify-center">
+      <section className="flex items-center justify-center">
         <StyledArrowDownIcon>
           <div>
             <ArrowDownIcon className="hover:stroke-bg-white" />
           </div>
         </StyledArrowDownIcon>
-      </div>
+      </section>
+
+      <section>
+        <div
+          className="flex flex-col items-center gap-5 
+         p-[50px] "
+        >
+          <div className="w-[850px]">
+            <span className="text-center text-[30px] text-[#173364] font-[300]">
+              CoolVision is part of a group developing online video streaming
+              platforms, used by millions of users across the globe.
+            </span>
+          </div>
+
+          <div className="flex items-center justify-center">
+            <PeopleTalking />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-[40px]">
+          <div className="flex items-center justify-center">
+            <span className="text-[40px] text-[#173364]">
+              Why Working at Coolvision Rocks?
+            </span>
+          </div>
+          <div className="grid grid-cols-3 gap-x-2 px-[200px]">
+            {/* First column = we care */}
+            <div>
+              <div className="grid grid-rows-3">
+                <div className="row-span-2 flex items-center justify-center">
+                  <LoveIcon />
+                </div>
+                <div class="flex items-center justify-center mt-2">
+                  <h2 class="text-[#173364] font-extrabold text-[25px] p-2 border-4 border-solid border-[#14AEDD] rounded-lg">
+                    We care
+                  </h2>
+                </div>
+
+                <div className="flex items-center justify-center mb-[10px]">
+                  <span className="text-[#13284E] font-bold text-[25px]">
+                    We are all about people
+                  </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-[#173364] text-[18px]">
+                    The friendly environment with its collaborative spirit and
+                    great professional relationships allows everyone the
+                    opportunity to make a difference.
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* Second column = Excellence */}
+            <div>
+              <div className="grid grid-rows-3">
+                <div className="row-span-2 flex items-center justify-center">
+                  <ExcellenceIcon />
+                </div>
+                <div className="flex items-center justify-center">
+                  <h2 className="text-[#173364] font-extrabold text-[25px] p-2 border-4 border-solid border-[#14AEDD] rounded-lg">
+                    Excellence
+                  </h2>
+                </div>
+                <div className="flex items-center justify-center mb-[10px]">
+                  <span className="text-[#13284E] font-bold text-[25px]">
+                    We aim to lead
+                  </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-[#173364] text-[18px]">
+                    Constantly striving to be the best in the industry, which is
+                    why we encourage personal growth and the development of
+                    expertise and leadership qualities within our team.
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* Third column =  Enjoyment*/}
+            <div>
+              <div className="grid grid-rows-3">
+                <div className="row-span-2 flex items-center justify-center">
+                  <EnjoymentIcon />
+                </div>
+                <div class="flex items-center justify-center">
+                  <h2 class="text-[#13284E] font-extrabold text-[25px] p-2 border-4 border-solid border-[#14AEDD] rounded-lg">
+                    Enjoyment
+                  </h2>
+                </div>
+                <div className="flex items-center justify-center mb-[10px]">
+                  <span className="text-[#13284E] font-bold text-[25px]">
+                    Working here is fun
+                  </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="text-[#13284E] text-[18px]">
+                    We have a relaxed and fun work environment where employees
+                    are encouraged to be themselves and to have fun while they
+                    work. We offer a variety of perks and benefits to our
+                    employees, such as free snacks, a game room, and flexible
+                    work hours.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Homepage>
   );
 };
