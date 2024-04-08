@@ -6,6 +6,7 @@ import LoveIcon from "../../assets/LoveIcon";
 import ExcellenceIcon from "../../assets/ExcellenceIcon";
 import EnjoymentIcon from "../../assets/EnjoymentIcon";
 import "../../assets/css/animations/popout.css";
+import "../../assets/css/animations/reveal.css";
 
 const Homepage = styled.div`
   height: 100vh;
@@ -166,7 +167,7 @@ const Home = () => {
             {/* First column = we care */}
             <div>
               <div className="grid grid-rows-3">
-                <div className="row-span-2 flex items-center justify-center">
+                <div className="row-span-2 flex items-center justify-center reveal">
                   <LoveIcon />
                 </div>
                 <div class="flex items-center justify-center mt-2">
@@ -192,7 +193,7 @@ const Home = () => {
             {/* Second column = Excellence */}
             <div>
               <div className="grid grid-rows-3">
-                <div className="row-span-2 flex items-center justify-center">
+                <div className="row-span-2 flex items-center justify-center reveal">
                   <ExcellenceIcon />
                 </div>
                 <div className="flex items-center justify-center">
@@ -217,7 +218,7 @@ const Home = () => {
             {/* Third column =  Enjoyment*/}
             <div>
               <div className="grid grid-rows-3">
-                <div className="row-span-2 flex items-center justify-center">
+                <div className="row-span-2 flex items-center justify-center reveal">
                   <EnjoymentIcon />
                 </div>
                 <div class="flex items-center justify-center">
