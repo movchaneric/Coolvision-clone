@@ -9,11 +9,17 @@ import {
 import CoolvisionLogo from "../assets/coolvision";
 
 const StyledNavBar = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: center;
   height: 65px;
+  background-color: #fff; /* Optionally, you can add a background color */
+  z-index: 999; /* Ensure it stays on top of other content */
   border-bottom: 0.5px solid #555;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px 0px;
 `;

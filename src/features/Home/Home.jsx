@@ -5,6 +5,7 @@ import PeopleTalking from "../../assets/PeopleTalking";
 import LoveIcon from "../../assets/LoveIcon";
 import ExcellenceIcon from "../../assets/ExcellenceIcon";
 import EnjoymentIcon from "../../assets/EnjoymentIcon";
+import "../../assets/css/animations/popout.css";
 
 const Homepage = styled.div`
   height: 100vh;
@@ -150,7 +151,7 @@ const Home = () => {
             </span>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center popout">
             <PeopleTalking />
           </div>
         </div>

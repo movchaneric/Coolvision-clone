@@ -8,7 +8,7 @@ const PeopleTalking = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 146 104"
       height="380"
-      width="540"
+      width="480"
       data-type="ugc"
       role="img"
       aria-label="Team Vector Photo, and link to about page."
