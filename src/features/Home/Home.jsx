@@ -8,14 +8,24 @@ import EnjoymentIcon from "../../assets/EnjoymentIcon";
 import "../../assets/css/animations/popout.css";
 import "../../assets/css/animations/reveal.css";
 import styles from "../Home/Home.module.css";
-import CoolvisionLRG from "../../assets/coolvision-lg";
+
 import HomeLogo from "./HomeLogo/HomeLogo";
+import HomeDescription from "./HomeDescription/HomeDescription";
+import WhySection from "./WhySection/WhySection";
 
 const Home = ({ children }) => {
   return (
-    <div>
+    <div className={`${styles["home-img"]}`}>
       <section className={`${styles["logo-section"]}`}>
         <HomeLogo>{children}</HomeLogo>
+      </section>
+
+      <section>
+        <HomeDescription>{children}</HomeDescription>
+      </section>
+
+      <section className={`${styles["why-section"]}`}>
+        <WhySection>{children}</WhySection>
       </section>
     </div>
   );
