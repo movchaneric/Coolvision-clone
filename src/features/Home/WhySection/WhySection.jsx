@@ -1,4 +1,6 @@
 import LoveIcon from "../../../assets/LoveIcon";
+import EnjoymentBox from "../EnjoymentBox/EnjoymentBox";
+import ExcellenceBox from "../ExcellenceBox/ExcellenceBox";
 import LoveIconBox from "../LoveIconBox/LoveIconBox";
 import styles from "../WhySection/WhySection.module.css";
 
@@ -12,12 +14,15 @@ const WhySection = ({ children }) => {
           <span className={`${styles["text-center"]}`}>Rocks</span>
         </p>
       </div>
-      <div className={`${styles["why-grid"]}`}>
-        <LoveIconBox>{children}</LoveIconBox>
-        {/* Excellence Box */}
-        <div className={`${styles["excellence-box"]}`}></div>
-        {/* Enjoyment Box */}
-        <div className={`${styles["enjoyment-box"]}`}></div>
+      <div className="flex items-center justify-center mt-20 mb-20">
+        <div className={`${styles["why-grid"]}`}>
+          {/* LoveIcon box */}
+          <LoveIconBox>{children}</LoveIconBox>
+          {/* Excellence Box */}
+          <ExcellenceBox>{children}</ExcellenceBox>
+          {/* Enjoyment Box */}
+          <EnjoymentBox>{children}</EnjoymentBox>
+        </div>
       </div>
     </div>
   );

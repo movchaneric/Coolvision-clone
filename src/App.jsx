@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* Show nav bar on everypage */}
         <Navbar />
+        {/* Show nav bar on everypage */}
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Home />} />
@@ -25,8 +25,8 @@ function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

@@ -15,7 +15,7 @@ import WhySection from "./WhySection/WhySection";
 
 const Home = ({ children }) => {
   return (
-    <div className={`${styles["home-img"]}`}>
+    <div className={`${styles["home-box"]}`}>
       <section className={`${styles["logo-section"]}`}>
         <HomeLogo>{children}</HomeLogo>
       </section>
