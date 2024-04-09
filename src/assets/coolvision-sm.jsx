@@ -1,4 +1,4 @@
-const CoolvisionLogo = () => {
+const CoolvisionSML = () => {
   return (
     <svg
       preserveAspectRatio="xMidYMid meet"
@@ -86,4 +86,4 @@ const CoolvisionLogo = () => {
   );
 };
 
-export default CoolvisionLogo;
+export default CoolvisionSML;

@@ -6,10 +6,9 @@ import {
   AiFillFacebook,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import CoolvisionLogo from "../assets/coolvision";
-
-const StyledNavBar = styled.div`
-  position: fixed;
+import CoolvisionSML from "../assets/coolvision-sm";
+const StyledNavBar = styled.nav`
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -18,8 +17,6 @@ const StyledNavBar = styled.div`
   justify-content: center;
   align-items: center;
   height: 65px;
-  background-color: #fff; /* Optionally, you can add a background color */
-  z-index: 999; /* Ensure it stays on top of other content */
   border-bottom: 0.5px solid #555;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 5px 0px;
 `;
@@ -28,17 +25,25 @@ const StyledSocialLinks = styled.div`
   display: flex;
   align-items: center;
 `;
-const StyledNavItem = styled.p`
+const StyledNavItem = styled.a`
   font-size: 20px;
   font-weight: 100;
   color: #002e6d;
   word-spacing: 3px;
   display: flex;
   padding: 0 8px;
-  transition: stroke 0.3s ease;
+  transition: color 0.3s;
 
   &:hover {
-    stroke: #ffffff; /* Change stroke color to white on hover */
+    color: #14aedd; /* Define styles for hover */
+  }
+
+  &:active {
+    color: #002e6d; /* Define styles for active */
+  }
+
+  &:visited {
+    color: #002e6d; /* Define styles for visited links */
   }
 `;
 
@@ -47,7 +52,7 @@ const Navbar = () => {
     <StyledNavBar>
       <NavLink to="/">
         <StyledNavItem>
-          <CoolvisionLogo width={120} height={50} />
+          <CoolvisionSML width={120} height={50} />
         </StyledNavItem>
       </NavLink>
 

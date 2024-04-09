@@ -1,0 +1,9 @@
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets//coolvision-bg.webp");
+}
+
+

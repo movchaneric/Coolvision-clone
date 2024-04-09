@@ -7,14 +7,14 @@ import Contact from "./features/Contact/Contact";
 import styled from "styled-components";
 import Footer from "./features/Footer/footer";
 
-const StyledApp = styled.div`
-  display: grid;
-  grid-template-rows: 65px 1fr 65px;
-`;
+// const StyledApp = styled.div`
+//   display: grid;
+//   grid-template-rows: 65px 1fr 65px;
+// `;
 
 function App() {
   return (
-    <StyledApp>
+    <div>
       <BrowserRouter>
         {/* Show nav bar on everypage */}
         <Navbar />
@@ -25,9 +25,9 @@ function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
-        {/* <Footer /> */}
       </BrowserRouter>
-    </StyledApp>
+      <Footer />
+    </div>
   );
 }
 
