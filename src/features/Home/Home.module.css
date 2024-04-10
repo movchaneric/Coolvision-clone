@@ -8,3 +8,16 @@
 .home-box {
   background-color: #d3eaef;
 }
+
+.why-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-section-arrow-btn {
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

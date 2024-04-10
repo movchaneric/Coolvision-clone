@@ -6,6 +6,7 @@ import Navbar from "./componenets/Navbar";
 import Contact from "./features/Contact/Contact";
 import styled from "styled-components";
 import Footer from "./features/Footer/footer";
+import LifeAtCoolvision from "./features/LifeAtCoolvision/LifeAtCoolvision";
 
 // const StyledApp = styled.div`
 //   display: grid;
@@ -23,6 +24,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="life-at-coolvision" element={<LifeAtCoolvision />} />
           </Route>
         </Routes>
         <Footer />

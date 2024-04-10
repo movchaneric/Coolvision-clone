@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.header-h1 {
+  color: #152c54;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+}
+
+.sub-container {
+  max-width: 1500px;
+  padding: 0 200px;
+  margin: 0 auto;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.rocket-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.rocket-box-text {
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  color: #152c54;
+  letter-spacing: -0.5px;
+}
+
+.rocket-box-img {
+  max-width: 500px;
+}

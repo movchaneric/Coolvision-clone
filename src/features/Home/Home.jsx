@@ -1,17 +1,8 @@
-import styled from "styled-components";
-import ArrowDownIcon from "../../assets/DownArray";
-import { NavLink } from "react-router-dom";
-import PeopleTalking from "../../assets/PeopleTalking";
-import LoveIcon from "../../assets/LoveIcon";
-import ExcellenceIcon from "../../assets/ExcellenceIcon";
-import EnjoymentIcon from "../../assets/EnjoymentIcon";
-import "../../assets/css/animations/popout.css";
-import "../../assets/css/animations/reveal.css";
 import styles from "../Home/Home.module.css";
-
 import HomeLogo from "./HomeLogo/HomeLogo";
 import HomeDescription from "./HomeDescription/HomeDescription";
 import WhySection from "./WhySection/WhySection";
+import RightArrow from "../../componenets/RightArrow";
 
 const Home = ({ children }) => {
   return (
@@ -26,9 +17,14 @@ const Home = ({ children }) => {
 
       <section className={`${styles["why-section"]}`}>
         <WhySection>{children}</WhySection>
+        <div className={`${styles["why-section-arrow-btn"]}`}>
+          <RightArrow />
+        </div>
       </section>
     </div>
   );
 };
 
 export default Home;
+
+// className={`${styles['why-section-arrow-btn']}`}
