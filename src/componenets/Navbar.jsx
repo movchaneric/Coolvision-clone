@@ -68,7 +68,7 @@ const Navbar = () => {
         <StyledNavItem>Life at CoolVision</StyledNavItem>
       </NavLink>
 
-      <NavLink to="/cool-team">
+      <NavLink to="/coolteam">
         <StyledNavItem>Cool Team</StyledNavItem>
       </NavLink>
 
