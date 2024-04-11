@@ -1,25 +1,25 @@
 import ProfileImg from "../../../componenets/ProfileImg";
 import styles from "./CoolTeamWorkers.module.css";
 
-const Worker = ({ name, position, dateJoined, description, imgSrc }) => {
+const Worker = ({ worker }) => {
   return (
     <div>
       <div className={`${styles["worker-img"]}`}>
-        <ProfileImg name={name} />
+        <ProfileImg name={worker.name} />
       </div>
-      <div>
-        <h2>{name}</h2>
+      <div className={`${styles["header"]}`}>
+        <h2>{worker.name}</h2>
       </div>
 
-      <div>
+      <div className={`${styles["worker-description"]}`}>
         <p>
-          {position}, joined CoolVision in {dateJoined}
+          {worker.position}, joined CoolVision in {worker.dateJoined}
         </p>
       </div>
 
-      <div>
-        <p>{description}</p>
-      </div>
+      <blockquote className={`${styles["worker-description"]}`}>
+        <p>{worker.description}</p>
+      </blockquote>
     </div>
   );
 };

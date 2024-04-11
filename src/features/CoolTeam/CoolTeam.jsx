@@ -1,6 +1,7 @@
 import styles from "./CoolTeam.module.css";
 import FiveStarImg from "../../assets/5StarImg";
 import CoolTeamWorkers from "./CoolTeamWorkers/CoolTeamWorkers";
+import AnimatedGif from "../../componenets/AnimatedGif";
 
 const CoolTeam = () => {
   return (
@@ -24,7 +25,10 @@ const CoolTeam = () => {
             </p>
           </div>
           <div className={`${styles["rocket-box-img"]}`}>
-            <p>Coolvision-GIF</p>
+            <AnimatedGif
+              src="https://static.wixstatic.com/media/5a5335_e37f3410b845493d805640fbe8e84046~mv2.gif"
+              alt="coolvision-gif"
+            />
           </div>
 
           {/* Second row of Z pattern */}
@@ -41,8 +45,12 @@ const CoolTeam = () => {
           </div>
         </div>
 
-        <div>
+        <div className={`${styles["worker-box"]}`}>
           <CoolTeamWorkers />
+        </div>
+
+        <div className="cool-team-footer">
+          
         </div>
       </div>
     </>

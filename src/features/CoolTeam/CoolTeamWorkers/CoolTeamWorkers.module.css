@@ -8,4 +8,35 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 60px;
+}
+
+.worker-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 28px;
+  color: #152c54;
+  font-weight: bolder;
+}
+
+.worker-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #152c54;
+  font-size: 20px;
+  margin-bottom: 30px;
 }

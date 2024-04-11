@@ -17,9 +17,9 @@ const Home = ({ children }) => {
 
       <section className={`${styles["why-section"]}`}>
         <WhySection>{children}</WhySection>
-        <div className={`${styles["why-section-arrow-btn"]}`}>
+        {/* <div className={`${styles["why-section-arrow-btn"]}`}>
           <RightArrow />
-        </div>
+        </div> */}
       </section>
     </div>
   );

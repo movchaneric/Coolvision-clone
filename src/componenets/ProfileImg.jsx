@@ -1,10 +1,18 @@
+import styled from "styled-components";
+
+const Img = styled.img`
+  max-width: 229px;
+  border-radius: 50%;
+`;
+
 const ProfileImg = ({ name }) => {
+  const formattedName = name.replace(/\s/g, "-");
+
   return (
-    <div>Worker img</div>
-    // <img
-    //   src="src/features/CoolTeam/workers-imgs/sergey.jpg"
-    //   alt={`${name}-img`}
-    // />
+    <Img
+      src={`src/features/CoolTeam/workers-imgs/${formattedName}.jpg`}
+      alt={`${name}-img`}
+    />
   );
 };
 

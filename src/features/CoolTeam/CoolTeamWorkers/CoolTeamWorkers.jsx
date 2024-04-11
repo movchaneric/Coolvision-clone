@@ -1,46 +1,14 @@
-import workersDescription from "../../../assets/workersDesc/workersDescription";
+import workersData from "../../../assets/workersData/workers.json";
 import Worker from "./Worker";
+import styles from "./CoolTeamWorkers.module.css";
 
 const CoolTeamWorkers = () => {
   return (
-    <div className={`${"workers-box"}`}>
-      <div className={`${"workers-grid"}`}>
-        <div>
-          <Worker
-            name="Sergey Popov"
-            position="NOC team leader"
-            dateJoined="2018"
-            description={workersDescription.at(0)}
-            
-          />
-        </div>
-
-        <div>
-          <Worker
-            name="Anastasia Shapira"
-            position="Project Manager"
-            dateJoined="2015"
-            description={workersDescription.at(1)}
-          />
-        </div>
-
-        <div>
-          <Worker
-            name="Diego Litman"
-            position="BI Developer"
-            dateJoined="2009"
-            description={workersDescription.at(2)}
-          />
-        </div>
-
-        <div>
-          <Worker
-            name="Amir Shinar"
-            position="Developers Team leader"
-            dateJoined="2011"
-            description={workersDescription.at(3)}
-          />
-        </div>
+    <div className={`${styles["workers-box"]}`}>
+      <div className={`${styles["workers-grid"]}`}>
+        {workersData?.map((worker) => (
+          <Worker key={worker.key} worker={worker} />
+        ))}
       </div>
     </div>
   );
