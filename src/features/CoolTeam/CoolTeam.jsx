@@ -2,6 +2,8 @@ import styles from "./CoolTeam.module.css";
 import FiveStarImg from "../../assets/5StarImg";
 import CoolTeamWorkers from "./CoolTeamWorkers/CoolTeamWorkers";
 import AnimatedGif from "../../componenets/AnimatedGif";
+import RightArrow from "../../componenets/RightArrow";
+import Button from "../../componenets/Button";
 
 const CoolTeam = () => {
   return (
@@ -50,7 +52,15 @@ const CoolTeam = () => {
         </div>
 
         <div className="cool-team-footer">
-          
+          <div className="flex justify-center items-center mb-10">
+            <Button>Want to join the team?</Button>
+          </div>
+          <div className="flex justify-center items-center mb-10">
+            <p className={`${styles["team-footer-p"]}`}>
+              "Great things in business are never done by one person; they're
+              done by a team of people." – Steve Jobs
+            </p>
+          </div>
         </div>
       </div>
     </>
