@@ -55,7 +55,7 @@ const CoolTeam = () => {
           <div className="flex justify-center items-center mb-10">
             <Button>Want to join the team?</Button>
           </div>
-          <div className="flex justify-center items-center mb-10">
+          <div className="flex justify-center items-center">
             <p className={`${styles["team-footer-p"]}`}>
               "Great things in business are never done by one person; they're
               done by a team of people." – Steve Jobs

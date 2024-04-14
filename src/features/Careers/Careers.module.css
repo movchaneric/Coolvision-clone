@@ -1,0 +1,29 @@
+.careers-header-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 1000px;
+  row-gap: 50px;
+}
+.careers-header-h1-box {
+}
+
+.header-h1 {
+  color: #13284e;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+
+.careers-header-p-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-p {
+  font-size: 26px;
+  color: #13284e;
+  font-family: "questrial", sans-serif;
+  letter-spacing: 0.01em;
+}

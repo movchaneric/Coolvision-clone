@@ -8,11 +8,8 @@ import styled from "styled-components";
 import Footer from "./features/Footer/footer";
 import LifeAtCoolvision from "./features/LifeAtCoolvision/LifeAtCoolvision";
 import CoolTeam from "./features/CoolTeam/CoolTeam";
+import Careers from "./features/Careers/Careers";
 
-// const StyledApp = styled.div`
-//   display: grid;
-//   grid-template-rows: 65px 1fr 65px;
-// `;
 
 function App() {
   return (
@@ -27,6 +24,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="life-at-coolvision" element={<LifeAtCoolvision />} />
             <Route path="coolteam" element={<CoolTeam />} />
+            <Route path="careers" element={<Careers />} />
           </Route>
         </Routes>
         <Footer />
