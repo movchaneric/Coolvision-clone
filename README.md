@@ -1,3 +1,3 @@
 # CoolVision Landing Page:
 
-![alt text](../public/demoImg.png)
+![LandingPage](./public/demoImg.png)
